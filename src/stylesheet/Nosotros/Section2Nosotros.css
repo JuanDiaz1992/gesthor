@@ -1,0 +1,218 @@
+
+.seccion2__contenedor-tarjeta{
+    background: #f0efef;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    max-width: 924px;
+    height: fit-content;
+
+}
+
+
+
+.div_img--movil{
+	display: none;
+} 
+
+.imagen-contenedor3Nosotros{
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+}
+
+.imagen-contenedor3Nosotros img{
+	width: 100%;
+	max-width: 917px;
+
+}
+
+.section__divcontainer{
+	display: flex;
+    justify-content: flex-start;
+    height: 80%;
+    position: absolute;
+    align-items: center;
+}
+
+.section__contenedorListados{
+	padding-left: 40px;
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 931px;
+}
+
+
+.section__ul{
+	width: 46%;
+	
+
+}
+
+
+
+.section__ul--derecho{
+	padding-right: 12px;
+}
+
+.section__ul--h3{
+	font-size: 0.9em;
+	color: white;
+}
+
+
+.section__ul--li{
+	font-size: 0.7em;
+	color: white;
+}
+
+
+
+
+
+
+
+@media(max-width:918px){
+    
+
+
+.div_img--escritorio{
+    display: none;
+}
+
+
+.div_img--movil{
+	display: inline;
+} 
+
+
+.div_img--escritorio{
+    display: none;
+}
+
+
+.div_img--movil{
+    display: inline;
+} 
+
+.imagen-contenedor3Nosotros img {
+    object-fit: cover;
+}
+
+.imagen-contenedor3Nosotros{
+    height: 227px;
+    width: 527px;
+}
+
+.section__divcontainer {
+    height: 180px;
+    top: 27px;
+    left: 6%;
+
+    width: 300px;
+}
+
+
+
+.section__contenedorListados{
+    height: 180px;
+    width: 308px;
+    padding-left: 0;
+    justify-content: space-around;
+    padding-left: 15px;
+    flex-direction: column;
+    
+
+}
+
+.section__ul{
+    width: 100%;
+    
+
+}
+
+.section__ul--h3{
+    font-size: 0.6em;
+    color: white;
+    
+}
+
+
+.section__ul--li{
+    font-size: 0.5em;
+    color: white;
+    
+   
+}
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:693px){
+    .imagen-contenedor3Nosotros img {
+        object-fit: none;
+    }
+    
+    .imagen-contenedor3Nosotros{
+        height: 227px;
+        width: 100%;
+    }
+    
+    .section__divcontainer {
+        height: 180px;
+        top: 27px;
+        left: -14px;
+    
+        width: 300px;
+    }
+    
+    
+    
+    .section__contenedorListados{
+        height: 180px;
+        width: 308px;
+        padding-left: 0;
+        justify-content: space-around;
+        padding-left: 15px;
+        flex-direction: column;
+        
+    
+    }
+    
+    .section__ul{
+        width: 100%;
+        
+    
+    }
+    
+    .section__ul--h3{
+        font-size: 0.6em;
+        color: white;
+        
+    }
+    
+    
+    .section__ul--li{
+        font-size: 0.5em;
+        color: white;
+        
+       
+    }
+
+    .seccion2__contenedor-tarjeta{
+        width: 96%;
+    
+    }
+    
+
+
+}

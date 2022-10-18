@@ -1,0 +1,282 @@
+
+
+header{
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+
+}
+
+.contenedorNav{
+	height: 100%;
+	width: 100%;
+	background: #282829d8;
+	backdrop-filter: blur(10px);
+
+}
+.nav{
+
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+/*Con el siguiente comando hacemos que en pantallas grandes el nav quede centrado*/
+	max-width: 992px;
+	margin: 0 auto;
+	z-index: 100;
+
+}
+
+
+/* este es el contenedor de los botones del menú */
+.nav-menu{
+	display: flex;
+	margin-right:40px;
+	list-style: none;
+	
+}
+
+/* Estos son los <a> botones del nav */
+.nav-link{
+	text-decoration: none;
+	color: rgb(243, 243, 243);
+}
+
+/* estos son los li del nav y controla las fuentes de los botones */
+.nav-menu-item{
+	font-size: 12px;
+	margin: 0 10px;
+	line-height: 60px;
+	/*el siguiente comando convierte las letras a mayúsculas*/
+	text-transform: uppercase;
+
+	width: max-content;
+}
+
+
+/*Este es el efecto HOVER de los botones*/
+/*Seleccionamos los elementos A con la clase principal*/
+
+
+.nav-menu-link{
+	padding: 8px 12px;
+	border-radius: 5px;
+}
+
+/* Recordemos que la etiqueta .nav-menu-link_active se la ponemos solo a la página activa */
+.nav-menu-link:hover,
+.active{
+	background-color: rgb(82, 82, 82);
+	transition: 0.5s;
+
+}
+
+
+/* Este es el botón de moviles */
+.nav_toggle{
+	background: none;
+	border: none;
+	display: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+
+
+
+
+
+
+.nav-icon-5{
+	width: 35px;
+	height: 30px;
+	margin: 10px 10px;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+  }
+  .nav-icon-5 span{
+	background-color:#fff;
+	position: absolute;
+	border-radius: 2px;
+	transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+	width:100%;
+	height: 4px;
+	transition-duration: 500ms
+  }
+  .nav-icon-5 span:nth-child(1){
+	top:0px;
+	left: 0px;
+  }
+  .nav-icon-5 span:nth-child(2){
+	top:13px;
+	left: 0px;
+	opacity:1;
+  }
+  .nav-icon-5 span:nth-child(3){
+	bottom:0px;
+	left: 0px;
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(1){
+	transform: rotate(-3deg) scaleY(1.1);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(2){
+	transform: rotate(3deg) scaleY(1.1);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(3){
+	transform: rotate(-4deg) scaleY(1.1);
+  }
+  .nav-icon-5.open span:nth-child(1){
+	transform: rotate(45deg);
+	top: 13px;
+  }
+  .nav-icon-5.open span:nth-child(2){
+	opacity:0;
+  }
+  .nav-icon-5.open span:nth-child(3){
+	transform: rotate(-45deg);
+	top: 13px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* esta etiqueta quita el cuadrado al rededor de los botones */
+.nav_toggle:focus:not(:focus-visible){
+	outline: none;
+}
+
+
+/*Este el contenedor del logo del nav*/
+
+.contenedor-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5px ;
+	height: 100%;
+}
+
+.logoNavGesthor{
+	object-fit: contain ;
+	width: 150px;
+	height:max-content;
+	
+
+}
+
+
+.BarraDesplazamiento{
+	position: fixed;
+	margin-top: 60px;
+	top: 0px;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: #0B7182;
+	transform-origin: 0%;
+	z-index: 200;
+}
+
+
+
+
+
+
+
+@media(max-width:918px){
+
+
+
+    /* este es el contenedor de los botones del menú */
+    .nav-menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.945);  
+        backdrop-filter: blur(5px);      
+        width: 100%;
+		height: 100vh;
+        align-items: center;
+        padding: 90px 0 0 0;
+
+
+
+
+/* Con esta etiqueta escondemos el menú de la página principal y lo reaparecemos con la etiqueta .nav-menu_visible */
+        left: -700px;
+		top: -100px;
+
+		opacity: 0;
+		
+        transition: all .3s ease;
+		z-index: -1;
+        
+    }
+
+
+
+
+/* aqui definimos que el menú aparece en la posición 0 cuando lo llamemos */
+    .nav-menu_visible{
+        left: 0;
+		top: 0;
+		border-radius: 0 0 80% 0;
+		opacity: 1;
+
+    }
+
+
+
+
+    /* estos son los li del nav y controla las fuentes de los botones */
+    .nav-menu-item{
+        line-height: 70px;        
+    }
+    
+    
+    /*Este es el efecto HOVER de los botones*/
+    /*Seleccionamos los elementos A con la clase principal*/
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 0px;
+    }
+    .nav-menu-link:hover,
+    .active{
+        background: none;
+        color: rgb(150, 149, 149);
+    
+    }
+    
+  
+    /* Este es el botón de moviles */
+    .nav_toggle{
+
+        display: block;
+    }
+
+
+}
+
+
+
+
+

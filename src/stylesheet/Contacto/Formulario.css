@@ -1,0 +1,185 @@
+.formulario__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 934.59px;
+    margin-top: 20px;
+
+
+    background: #f0efef;
+	border-radius: 15px;
+
+	padding: 15px;
+
+	height: fit-content;
+
+    
+}
+
+/*-----------------------Información-------------------*/
+
+
+.formulario__container__div--informacion{
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+
+
+
+}
+.containerTextAndLine{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+.h2Contacto{
+    font-size: 40px;
+
+}
+.h4Contacto{
+    margin: 15px 0 15px 0; 
+}
+
+.lineaContacto{
+	
+	height: 9px;
+	margin-left: 11%;
+	width: 80%;
+	color: transparent;
+    background-image: linear-gradient(to left, #010d13, #1d7197, #6a8592,#8c8e8f);        
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+	animation: cambiarDeColor 5s  infinite alternate;
+	
+}
+
+@keyframes cambiarDeColor {
+
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+}
+}
+
+
+/*-----------------------Formulario-------------------*/
+
+
+.formulario__container__div--formulario{
+    flex: 1 1;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.formulario__container__div--enviado{
+    flex: 1 1;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.formulario__container__div--enviado h3{
+    text-align: center;
+}
+
+
+.containerGrid{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #eeeeeeff;
+
+}
+
+
+
+
+.formName{
+    grid-area: 1 / 1 / 2 / 2;
+    height: 40px;
+    border: solid 1px rgb(179, 179, 179) ;
+    padding: 0 0 0 15px;
+    width: 100%;
+    background-color: #e6e6e6;
+    font-weight: bold;
+
+    
+}
+
+.formEmail{
+    grid-area: 1 / 2 / 2 / 3;
+    height: 40px;
+    border: solid 1px rgb(179, 179, 179) ;
+    padding: 0 0 0 15px;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #e6e6e6;
+    font-weight: bold;
+}
+
+
+
+.formText{
+    grid-area: 2 / 1 / 5 / 3; 
+    width: 100%;
+    padding: 15px 0 0 15px;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #e6e6e6;
+    font-weight: bold;
+    
+}
+
+.divFlexButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    
+}
+
+.ButtonEnviar{
+    border: solid 1px #68c1f9ff ;
+    color: #68c1f9ff;
+    height: 40px;
+    width: 100px;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+
+
+
+.hiden{
+    display: none;
+}
+
+
+@media(max-width:693px){
+
+    .formulario__container{
+        flex-direction: column;
+    }
+
+    .formulario__container__div--formulario{
+        margin-top: 50px;
+    }
+
+}

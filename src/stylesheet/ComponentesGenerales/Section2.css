@@ -1,0 +1,44 @@
+
+
+
+
+.imagen-contenedor3{
+
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+.imagen-contenedor3 img{
+	background: #f0efef;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+	max-width: 919px;
+
+
+}
+
+
+
+@media(max-width:918px){
+
+    .imagen-contenedor3 img{
+        max-width: 553px;
+    }
+    
+        
+}
+        
+        
+        
+@media(max-width:693px){
+       
+.imagen-contenedor3 img {
+            max-width: 96%;
+			
+}
+
+}

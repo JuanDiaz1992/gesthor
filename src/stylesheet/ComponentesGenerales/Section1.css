@@ -1,0 +1,198 @@
+
+
+
+
+.inicio__contenedor-tarjeta{
+	background: #f0efef;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+	max-width: 924px;
+	height: fit-content;
+
+
+
+}
+
+
+.contenedor-internoImgText{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+.imagen-contenedor2{
+	
+
+	height: fit-content;
+}
+
+.Imgeninicio2{
+    width: 440px;
+	-webkit-box-shadow: -44px 46px 18px -46px rgba(0,0,0,0.75);
+-moz-box-shadow: -44px 46px 18px -46px rgba(0,0,0,0.75);
+box-shadow: -44px 46px 18px -46px rgba(0,0,0,0.75);
+	
+}
+
+
+.contenedor-texto{
+	width: 448px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+
+}
+
+
+.cont-texAndLine{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    height: -moz-fit-content;
+    height: fit-content;
+	
+
+
+}
+
+.Titulo-principal{
+	text-align: center;
+	margin: 0;
+	font-family: 'Poppins';
+	font-size: 2em;
+}
+
+
+.linea{
+	
+	height: 9px;
+	margin-left: 50%;
+	width: 80%;
+	color: transparent;
+    background-image: linear-gradient(to left, #010d13, #1d7197, #6a8592,#8c8e8f);        
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+	animation: cambiarDeColor 5s  infinite alternate;
+	
+}
+
+
+@keyframes cambiarDeColor {
+
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+}
+}
+
+
+
+
+
+
+
+
+.texto1{
+	text-align:justify;
+	padding-bottom: 30px;
+}
+
+p .negritas{
+	font-weight: bold;
+}
+
+.contactanos{
+	text-align: center;
+	color: #000000;
+	width: 250px;
+	padding-bottom: 50px;
+
+}
+
+
+
+
+
+@media(max-width:918px){
+
+    
+.contenedor-internoImgText{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Inicio{
+
+    justify-content: center;
+}
+
+.imagen-contenedor2{
+    margin-right: 0px;
+    height: fit-content;
+}
+
+.contenedor-texto{
+    margin-left: 0px;
+    width: 527px;
+    height: max-content;
+	
+}
+.texto1{
+    width: 400px ;
+}
+
+
+
+
+
+    
+}
+    
+    
+    
+@media(max-width:693px){
+   
+.contenedor-texto{
+    width: max-content;
+}
+
+.imagen-contenedor2 {
+    height: max-content;
+}   
+
+.Imgeninicio2 {
+    width: 307px;
+}
+    
+.texto1 {
+    width: 300px;
+	text-align: start;
+}
+
+.inicio__contenedor-tarjeta{
+width: 96%;
+}
+
+.contenedor-internoImgText {
+width: 100%;
+}
+
+.Titulo-principal {
+	font-size: 1.5em;
+}
+
+}

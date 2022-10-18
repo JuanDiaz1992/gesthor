@@ -1,0 +1,46 @@
+
+.preloader{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 200;
+	transition: all 1.5s;
+
+}
+
+
+
+.cargando{
+	padding-top: 15px;
+	color: white;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+.logoPreloader {
+	display: inline-block;
+	
+	width: 150px;
+	height:150px;
+	animation: lds-dual-ring 7s linear infinite;
+	
+
+
+  }
+  @keyframes lds-dual-ring {
+	0% {
+	
+	}
+	50%{filter: sepia(74%) saturate(500%) hue-rotate(240deg) brightness(97%) contrast(89%);
+
+	}
+	100% {
+		
+	}
+  }
+  

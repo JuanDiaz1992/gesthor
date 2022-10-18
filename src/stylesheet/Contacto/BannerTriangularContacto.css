@@ -1,0 +1,43 @@
+.parteInicialContacto{
+	max-width: 1219.590px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 584px;
+    margin-bottom: 31px
+
+
+}
+
+.imgeninicioContacto{
+	width: 100%;
+	object-fit:cover;
+}
+
+
+
+.LogoContacto{
+
+    width: 200px;
+    height: auto;
+
+}
+
+.H2Contacto{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.parteInicialContacto__div__container{
+    top: 80px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}

@@ -1,0 +1,12 @@
+body{
+	padding: 0px 0px 0;
+	background: #e6e6e6;
+
+}
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+}

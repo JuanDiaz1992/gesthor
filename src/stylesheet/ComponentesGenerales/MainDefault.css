@@ -1,0 +1,122 @@
+
+
+
+
+
+.contenedor-cuadradoN{
+	position: absolute;
+	object-fit: cover;
+    top: 0;
+    right:0;
+    transition: all 3s cubic-bezier(0,.16,.59,.54);
+	
+}
+
+
+
+
+.animacionCInicial{
+	animation: Desplzarabajo 2s;
+}
+
+@keyframes Desplzarabajo{
+
+    from {transform: scaleX(0);
+        
+    }
+
+    to {transform: scaleX(1)
+        
+}
+}
+
+
+
+
+.TextoprincipalBanner{
+	position: absolute;
+	top: 232px;
+	right: 42px;
+	opacity: 0;
+}
+
+.AnimacionAparecer{
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 6s;
+
+}
+
+
+
+
+
+
+.textBanner{
+	font-family: sans-serif;
+}
+.SubTituloBanner{
+	color: white;
+	text-align: right;
+	font-size: 20px;
+}
+.TituloBanner{
+	color: #9ad0d6;
+	font-size: 3em;
+}
+
+
+
+
+.parteInicialBanner{
+	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-bottom: 25px;
+
+
+}
+
+.Imgeninicio{
+	object-fit:cover;
+	width: 100%;
+	height: 565px;
+}
+
+
+.CuadradoInicio{
+	object-fit:cover;
+	width: 380px;
+	height: 565px;
+	backdrop-filter: blur(4px);
+}
+
+
+
+@media(max-width:693px){
+	.CuadradoInicio{
+		width: 250px;
+
+	}
+
+	.SubTituloBanner{
+		font-size: 20px;
+	}
+	.TituloBanner{
+
+		font-size: 2em;
+	}
+
+
+	.ConoceNuestro {
+		right: 25px;
+	}
+
+	.TextoprincipalBanner{
+		right: 22px;
+
+	}
+
+}
+
